@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+    
+            height: 300px;
+            background-color: aquamarine;
+        }
+        .box_normal
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box_relative
+        {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position:relative;
+            left:40px;
+            top: 20px;
+        }
+        .box2
+        {
+            height:300px;
+            background-color:yellow;
+        }
+        .box_absolute
+        {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            left: 120px;
+            top: 600px;
+        }
+        .box_fixed
+        {
+            width: 100px;
+            height: 100px;
+            background-color:brown;
+            position:fixed;
+            right: 10px;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relative positioning</h1>  <!--相对定位-->
+    <div class="box1">
+        <div class="box_normal"></div>
+        <div class="box_relative"></div>
+        <div class="box_normal"></div>
+    </div>
+    <h1>Absolute positioning</h1>  <!--绝对定位-->
+    <div class="box2">
+        <div class="box_normal"></div>
+        <div class="box_absolute"></div>
+        <div class="box_normal"></div>
+    </div>
+    <h1>Fixed positioning(Brown)</h1>     <!--固定定位（棕色方块）-->
+    <div class="box_fixed"></div>
+</body>
+</html>
